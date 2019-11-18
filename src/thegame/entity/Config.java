@@ -10,17 +10,17 @@ public class Config {
     public static final int SMALLER_ENEMY_SHIELD = 0;
     public static final int SMALLER_ENEMY_REWARD = 10;
     public static final double SMALLER_ENEMY_MOVESPEED = 10;
-    public static final int SMALLER_ENEMY_HEALTH = 50;
+    public static final int SMALLER_ENEMY_HEALTH = 70;
 
     public static final int TANKER_ENEMY_SHIELD = 5;
     public static final int TANKER_ENEMY_REWARD = 30;
     public static final double TANKER_ENEMY_MOVESPEED = 5;
-    public static final int TANKER_ENEMY_HEALTH = 300;
+    public static final int TANKER_ENEMY_HEALTH = 700;
 
-    public static final int BOSS_ENEMY_SHIELD = 8;
+    public static final int BOSS_ENEMY_SHIELD = 10;
     public static final int BOSS_ENEMY_REWARD = 100;
     public static final double BOSS_ENEMY_MOVESPEED = 2;
-    public static final int BOSS_ENEMY_HEALTH = 500;
+    public static final int BOSS_ENEMY_HEALTH = 1000;
 
     //Tower
     public static final int NORMAL_TOWER_SPEED = 30;
@@ -45,6 +45,6 @@ public class Config {
     public static final double MACHINE_GUN_BULLET_SPEED = 3;
 
     public static final int SNIPER_BULLET_TTL = 60;
-    public static final int SNIPER_BULLET_STRENGTH = 120;
+    public static final int SNIPER_BULLET_STRENGTH = 70;
     public static final double SNIPER_BULLET_SPEED = 4;
 }

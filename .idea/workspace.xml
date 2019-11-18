@@ -2,35 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3c2f0ab-db04-409d-88f2-d8cd44b1f53d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/image/background/victory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/bullet/machinegun_bullet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/bullet/normal_bullet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/bullet/sniper_bullet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/tower/sniper_tower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/music/background.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/music/gameover.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/music/startgame.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/music/victory.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/image/bullet/machinegun_bullet.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/image/bullet/machinegun_bullet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/image/bullet/normal_bullet.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/image/bullet/normal_bullet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/image/bullet/sniper_bullet.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/image/bullet/sniper_bullet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameField.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameState.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/enemy/AbstractEnemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/enemy/AbstractEnemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/tile/road/Target.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/tile/road/Target.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/enemy/boss_enemy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/image/enemy/boss_enemy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/enemy/normal_enemy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/image/enemy/normal_enemy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/enemy/smaller_enemy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/image/enemy/smaller_enemy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/enemy/tanker_enemy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/image/enemy/tanker_enemy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/tower/machinegun_tower.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/image/tower/machinegun_tower.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/tower/normal_tower.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/image/tower/normal_tower.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/tower/snipper_tower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/Bullet/SniperBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/Bullet/SniperBullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/enemy/BossEnemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/enemy/BossEnemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/enemy/SmallerEnemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/enemy/SmallerEnemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/enemy/TankerEnemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/enemy/TankerEnemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/bullet/machinegun_bullet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/image/bullet/machinegun_bullet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/bullet/normal_bullet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/image/bullet/normal_bullet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/bullet/sniper_bullet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/image/bullet/sniper_bullet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/thegame/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thegame/GameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/GameField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thegame/GameRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/GameRender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thegame/entity/Bullet/AbstractBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/entity/Bullet/AbstractBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thegame/entity/Bullet/MachineGunBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/entity/Bullet/MachineGunBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thegame/entity/Bullet/NormalBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/entity/Bullet/NormalBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thegame/entity/Bullet/SniperBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/entity/Bullet/SniperBullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thegame/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/GameStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thegame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/thegame/entity/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/entity/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thegame/entity/enemy/AbstractEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/entity/enemy/AbstractEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thegame/entity/tile/road/Target.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/entity/tile/road/Target.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thegame/entity/tile/tower/AbstractTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/entity/tile/tower/AbstractTower.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +65,7 @@
     <property name="last_opened_file_path" value="E:/BTL-OOP/javafx-sdk-11.0.2/lib/javafx.web.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">

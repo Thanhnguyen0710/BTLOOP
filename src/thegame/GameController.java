@@ -6,8 +6,12 @@ import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import thegame.entity.Config;
+
+import java.io.File;
 
 
 public class GameController extends AnimationTimer {
@@ -30,6 +34,15 @@ public class GameController extends AnimationTimer {
 
     private Image victory = new Image("/image/background/victory.png");
     private ImageView victoryView = new ImageView(victory);
+
+    private Media musicBackground = new Media(new File("D:\\BTLOOP\\src\\music\\background.mp3").toURI().toString());
+    private MediaPlayer musicBackgroundPlayer = new MediaPlayer(musicBackground);
+
+    private Media musicGameOver = new Media(new File("D:\\BTLOOP\\src\\music\\gameover.mp3").toURI().toString());
+    private MediaPlayer musicGameOverPlayer = new MediaPlayer(musicGameOver);
+
+    private Media musicVictory = new Media(new File("D:\\BTLOOP\\src\\music\\victory.mp3").toURI().toString());
+    private MediaPlayer musicVictoryPlayer = new MediaPlayer(musicVictory);
 
     private Button normal = new Button();
     private Button sniper = new Button();
@@ -58,6 +71,8 @@ public class GameController extends AnimationTimer {
     @Override
     public void handle(long l) {
         if (level == 4 && i == 30 && field.isVictory()) {
+            musicBackgroundPlayer.stop();
+            musicVictoryPlayer.play();
             pane.getChildren().add(victoryView);
             stop();
         }
@@ -211,11 +226,16 @@ public class GameController extends AnimationTimer {
             render.render();
         }
         else {
+            musicBackgroundPlayer.stop();
+            musicGameOverPlayer.play();
             primaryStage.setScene(overGame);
+            stop();
         }
     }
 
     public void start(){
+        musicBackgroundPlayer.play();
+
         over.getChildren().add(gameOverView);
         pane.getChildren().addAll(gameStartView,normal,sniper,machinegun,play,sell);
 
