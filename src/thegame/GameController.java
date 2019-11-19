@@ -34,21 +34,22 @@ public class GameController extends AnimationTimer {
 
     private Image victory = new Image("/image/background/victory.png");
     private ImageView victoryView = new ImageView(victory);
-
-    private Media musicBackground = new Media(new File("D:\\BTLOOP\\src\\music\\background.mp3").toURI().toString());
+/*
+    private Media musicBackground = new Media(new File("/music/background.mp3").toURI().toString());
     private MediaPlayer musicBackgroundPlayer = new MediaPlayer(musicBackground);
 
-    private Media musicGameOver = new Media(new File("D:\\BTLOOP\\src\\music\\gameover.mp3").toURI().toString());
+    private Media musicGameOver = new Media(new File("/music/gameover.mp3").toURI().toString());
     private MediaPlayer musicGameOverPlayer = new MediaPlayer(musicGameOver);
 
-    private Media musicVictory = new Media(new File("D:\\BTLOOP\\src\\music\\victory.mp3").toURI().toString());
+    private Media musicVictory = new Media(new File("/music/victory.mp3").toURI().toString());
     private MediaPlayer musicVictoryPlayer = new MediaPlayer(musicVictory);
-
+*/
     private Button normal = new Button();
     private Button sniper = new Button();
     private Button machinegun = new Button();
     private Button play = new Button("START");
     private Button sell = new Button("SELL");
+    private Button pause = new Button("PAUSE");
 
     private Pane pane = new Pane();
     private Pane over = new Pane();
@@ -71,8 +72,8 @@ public class GameController extends AnimationTimer {
     @Override
     public void handle(long l) {
         if (level == 4 && i == 30 && field.isVictory()) {
-            musicBackgroundPlayer.stop();
-            musicVictoryPlayer.play();
+  //          musicBackgroundPlayer.stop();
+    //        musicVictoryPlayer.play();
             pane.getChildren().add(victoryView);
             stop();
         }
@@ -223,31 +224,45 @@ public class GameController extends AnimationTimer {
                 });
             });
 
+            pause.setOnAction(actionEvent -> {
+                if (pause.getText().equals("PAUSE")) {
+                    pause.setText("PLAY");
+                    stop();
+                }
+                else {
+                    pause.setText("PAUSE");
+                    super.start();
+                }
+            });
+
             render.render();
         }
         else {
-            musicBackgroundPlayer.stop();
-            musicGameOverPlayer.play();
+      //      musicBackgroundPlayer.stop();
+        //    musicGameOverPlayer.play();
             primaryStage.setScene(overGame);
             stop();
         }
     }
 
     public void start(){
-        musicBackgroundPlayer.play();
+        //musicBackgroundPlayer.play();
 
         over.getChildren().add(gameOverView);
-        pane.getChildren().addAll(gameStartView,normal,sniper,machinegun,play,sell);
+        pane.getChildren().addAll(gameStartView,normal,sniper,machinegun,play,sell,pause);
 
         normal.setGraphic(normal_towerView);
         sniper.setGraphic(sniper_towerView);
         machinegun.setGraphic(machinegun_towerView);
 
+        pause.setLayoutX(1100);
+        pause.setLayoutY(530);
+
         sell.setLayoutX(1100);
-        sell.setLayoutY(500);
+        sell.setLayoutY(450);
 
         play.setLayoutX(1100);
-        play.setLayoutY(400);
+        play.setLayoutY(370);
 
         normal.setLayoutX(1100);
         normal.setLayoutY(50);

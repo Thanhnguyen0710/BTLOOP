@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3c2f0ab-db04-409d-88f2-d8cd44b1f53d" name="Default Changelist" comment="" />
+    <list default="true" id="f3c2f0ab-db04-409d-88f2-d8cd44b1f53d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/background/sell.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/META-INF/ProjectBTLOOP.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thegame/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thegame/GameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/GameField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thegame/GameRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/GameRender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thegame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thegame/entity/Bullet/AbstractBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/entity/Bullet/AbstractBullet.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -74,7 +74,7 @@ public abstract class AbstractBullet implements GameEntity {
 
     public void collision(GameField field) {
         for (int i = 0 ; i < field.getEntities().size() ; i++) {
-            if ((posX > field.getEntities().get(i).getPosX() + 10 && posX < field.getEntities().get(i).getPosX() + 40 )
+            if ((posX > field.getEntities().get(i).getPosX() + 7 && posX < field.getEntities().get(i).getPosX() + 43 )
                     && (posY > field.getEntities().get(i).getPosY()  && posY < field.getEntities().get(i).getPosY() + 50 ))
                 if (field.getEntities().get(i) instanceof AbstractEnemy && !destroy) {
                     ((AbstractEnemy)field.getEntities().get(i)).setHealth(strength);

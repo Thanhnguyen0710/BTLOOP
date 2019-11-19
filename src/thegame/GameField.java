@@ -173,18 +173,18 @@ public class GameField {
                 AbstractEnemy abstractEnemy = ((AbstractTower)entities.get(i)).getFindEnemy(this);
                 if (abstractEnemy != null && entities.get(i) instanceof NormalTower)
                     doSpawnNormalBullet(entities.get(i).getPosX()*50 + 25,entities.get(i).getPosY()*50 + 25,
-                                              abstractEnemy.getPosX() - (entities.get(i).getPosX()*50 + 25),
-                                                     abstractEnemy.getPosY() - (entities.get(i).getPosY()*50 + 25));
+                                              abstractEnemy.getPosX() - (entities.get(i).getPosX()*50 + 25) + 25,
+                                              abstractEnemy.getPosY() - (entities.get(i).getPosY()*50 + 25) + 25);
 
                 if (abstractEnemy != null && entities.get(i) instanceof SniperTower)
                     doSpawnSniperBullet(entities.get(i).getPosX()*50 + 25,entities.get(i).getPosY()*50 + 25,
-                            abstractEnemy.getPosX() - (entities.get(i).getPosX()*50 + 25),
-                            abstractEnemy.getPosY() - (entities.get(i).getPosY()*50 + 25));
+                            abstractEnemy.getPosX() - (entities.get(i).getPosX()*50 + 25) + 25,
+                            abstractEnemy.getPosY() - (entities.get(i).getPosY()*50 + 25) + 25);
 
                 if (abstractEnemy != null && entities.get(i) instanceof MachineGunTower)
                     doSpawnMachineGunBullet(entities.get(i).getPosX()*50 + 25,entities.get(i).getPosY()*50 + 25,
-                            abstractEnemy.getPosX() - (entities.get(i).getPosX()*50 + 25),
-                            abstractEnemy.getPosY() - (entities.get(i).getPosY()*50 + 25));
+                            abstractEnemy.getPosX() - (entities.get(i).getPosX()*50 + 25) + 25,
+                            abstractEnemy.getPosY() - (entities.get(i).getPosY()*50 + 25) + 25);
             }
         }
     }

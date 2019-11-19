@@ -4,6 +4,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import thegame.entity.Bullet.AbstractBullet;
 import thegame.entity.Bullet.MachineGunBullet;
 import thegame.entity.Bullet.NormalBullet;
@@ -193,6 +194,7 @@ public class GameRender {
         }
 
         labelHealth.setText("HEALTH: " + field.getHealth());
+        labelHealth.setTextFill(Color.RED);
         labelHealth.setLayoutX(1100);
         labelHealth.setLayoutY(600);
 

@@ -29,16 +29,16 @@ public class Main extends Application {
         Image gameStart = new Image("/image/background/start.jpg");
         ImageView gameStartView = new ImageView(gameStart);
         root.getChildren().add(gameStartView);
-
-        Media musicStart = new Media(new File("D:\\BTLOOP\\src\\music\\startgame.mp3").toURI().toString());
+/*
+        Media musicStart = new Media(new File("C:\\Users\\admin\\IdeaProjects\\BTLOOP\\src\\music\\startgame.mp3").toURI().toString());
         MediaPlayer musicStartPlayer = new MediaPlayer(musicStart);
         musicStartPlayer.play();
-
+*/
         startGame.setOnMouseClicked(mouseEvent -> {
             if((mouseEvent.getX() > 370 && mouseEvent.getX() < 681) &&
             (mouseEvent.getY() > 387 && mouseEvent.getY() < 570) ) {
                 gameController.start();
-                musicStartPlayer.stop();
+  //              musicStartPlayer.stop();
             }
             startGame.setOnMouseClicked(null);
         });
