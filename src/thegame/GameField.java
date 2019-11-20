@@ -167,21 +167,21 @@ public class GameField {
             }
     }
 
-    public void spawnerBullet() {
+    public void spawnerBullet(int tick) {
         for (int i = 0 ; i < entities.size() ; i++) {
             if (entities.get(i) instanceof AbstractTower) {
                 AbstractEnemy abstractEnemy = ((AbstractTower)entities.get(i)).getFindEnemy(this);
-                if (abstractEnemy != null && entities.get(i) instanceof NormalTower)
+                if (abstractEnemy != null && entities.get(i) instanceof NormalTower && tick > 0 && tick % Config.NORMAL_BULLET_TTL == 0)
                     doSpawnNormalBullet(entities.get(i).getPosX()*50 + 25,entities.get(i).getPosY()*50 + 25,
                                               abstractEnemy.getPosX() - (entities.get(i).getPosX()*50 + 25) + 25,
                                               abstractEnemy.getPosY() - (entities.get(i).getPosY()*50 + 25) + 25);
 
-                if (abstractEnemy != null && entities.get(i) instanceof SniperTower)
+                if (abstractEnemy != null && entities.get(i) instanceof SniperTower && tick > 0 && tick % Config.SNIPER_BULLET_TTL == 0)
                     doSpawnSniperBullet(entities.get(i).getPosX()*50 + 25,entities.get(i).getPosY()*50 + 25,
                             abstractEnemy.getPosX() - (entities.get(i).getPosX()*50 + 25) + 25,
                             abstractEnemy.getPosY() - (entities.get(i).getPosY()*50 + 25) + 25);
 
-                if (abstractEnemy != null && entities.get(i) instanceof MachineGunTower)
+                if (abstractEnemy != null && entities.get(i) instanceof MachineGunTower && tick > 0 && tick % Config.MACHINE_GUN_BULLET_TTL == 0)
                     doSpawnMachineGunBullet(entities.get(i).getPosX()*50 + 25,entities.get(i).getPosY()*50 + 25,
                             abstractEnemy.getPosX() - (entities.get(i).getPosX()*50 + 25) + 25,
                             abstractEnemy.getPosY() - (entities.get(i).getPosY()*50 + 25) + 25);

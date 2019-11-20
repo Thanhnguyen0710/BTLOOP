@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3c2f0ab-db04-409d-88f2-d8cd44b1f53d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/background/sell.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/META-INF/ProjectBTLOOP.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameField.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameRender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameRender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/Bullet/AbstractBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/Bullet/AbstractBullet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/thegame/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/thegame/GameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/GameField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thegame/GameRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/GameRender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thegame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thegame/entity/Bullet/AbstractBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/entity/Bullet/AbstractBullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thegame/entity/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/entity/Config.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -240,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574065746441</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="update">
+      <created>1574136109295</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1574136109295</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

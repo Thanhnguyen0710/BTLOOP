@@ -81,14 +81,22 @@ public class GameController extends AnimationTimer {
             tick += 1;
             field.moveBullet();
 
+            if (level == 2 && i == 0) {
+                pane.getChildren().add(machinegun);
+                i++;
+            }
+
+            if (level == 3 && i == 0) {
+                pane.getChildren().add(sniper);
+                i++;
+            }
+
             if (tick > 0 && tick % 5 == 0) {
                 field.moveEnemy();
                 field.doDestroy(render);
             }
 
-            if (tick % 45 == 0) {
-                field.spawnerBullet();
-            }
+            field.spawnerBullet(tick);
 
             if (tick == 90) {
                 if (level == 1) {
@@ -210,7 +218,7 @@ public class GameController extends AnimationTimer {
             });
 
             play.setOnAction(actionEvent -> {
-                if (level == 0 || (level == 1 && i == 7) || (level == 2 && i == 14) || (level == 3 && i ==20)) {
+                if ((level == 0 || (level == 1 && i >= 7) || (level == 2 && i >= 14) || (level == 3 && i >= 20)) && field.isVictory()) {
                     level++;
                     i = 0;
                 }
@@ -249,7 +257,7 @@ public class GameController extends AnimationTimer {
         //musicBackgroundPlayer.play();
 
         over.getChildren().add(gameOverView);
-        pane.getChildren().addAll(gameStartView,normal,sniper,machinegun,play,sell,pause);
+        pane.getChildren().addAll(gameStartView,normal,play,sell,pause);
 
         normal.setGraphic(normal_towerView);
         sniper.setGraphic(sniper_towerView);
