@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3c2f0ab-db04-409d-88f2-d8cd44b1f53d" name="Default Changelist" comment="">
+    <list default="true" id="f3c2f0ab-db04-409d-88f2-d8cd44b1f53d" name="Default Changelist" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameField.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameRender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/GameRender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/Bullet/AbstractBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/Bullet/AbstractBullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/Bullet/MachineGunBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/Bullet/MachineGunBullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/Bullet/NormalBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/Bullet/NormalBullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/Bullet/SniperBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/Bullet/SniperBullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/enemy/BossEnemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/enemy/BossEnemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/enemy/NormalEnemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/enemy/NormalEnemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/enemy/SmallerEnemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/enemy/SmallerEnemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/enemy/TankerEnemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectBTLOOP/thegame/entity/enemy/TankerEnemy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/thegame/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thegame/GameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/GameField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thegame/GameRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/GameRender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/thegame/entity/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thegame/entity/Config.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -242,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574136109295</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="update">
+      <created>1574221131155</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1574221131155</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

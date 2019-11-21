@@ -44,6 +44,8 @@ public class GameRender {
 
     private List<ImageView> imageViewList = new ArrayList<ImageView>();
 
+    private List<Label> healthEnemyList = new ArrayList<Label>();
+
     private Label labelCoin = new Label();
 
     private Label labelHealth = new Label();
@@ -68,6 +70,11 @@ public class GameRender {
         imageView.setLayoutX(normalEnemy.getPosX());
         imageView.setLayoutY(normalEnemy.getPosY());
         imageViewList.add(imageView);
+
+        Label label = new Label("" + normalEnemy.getHealth());
+        label.setLayoutX(normalEnemy.getPosX() + 10);
+        label.setLayoutY(normalEnemy.getPosY() - 10);
+        healthEnemyList.add(label);
     }
 
     public void renderSmallerEnemy(SmallerEnemy smallerEnemy){
@@ -76,6 +83,11 @@ public class GameRender {
         imageView.setLayoutX(smallerEnemy.getPosX());
         imageView.setLayoutY(smallerEnemy.getPosY());
         imageViewList.add(imageView);
+
+        Label label = new Label("" + smallerEnemy.getHealth());
+        label.setLayoutX(smallerEnemy.getPosX() + 10);
+        label.setLayoutY(smallerEnemy.getPosY() - 10);
+        healthEnemyList.add(label);
     }
 
     public void renderTankerEnemy(TankerEnemy tankerEnemy){

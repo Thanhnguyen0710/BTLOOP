@@ -81,12 +81,12 @@ public class GameController extends AnimationTimer {
             tick += 1;
             field.moveBullet();
 
-            if (level == 2 && i == 0) {
+            if (level == 1 && i == 7 && field.isVictory()) {
                 pane.getChildren().add(machinegun);
                 i++;
             }
 
-            if (level == 3 && i == 0) {
+            if (level == 2 && i == 14 && field.isVictory()) {
                 pane.getChildren().add(sniper);
                 i++;
             }

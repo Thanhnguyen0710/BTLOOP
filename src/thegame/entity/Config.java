@@ -20,7 +20,7 @@ public class Config {
     public static final int BOSS_ENEMY_SHIELD = 10;
     public static final int BOSS_ENEMY_REWARD = 100;
     public static final double BOSS_ENEMY_MOVESPEED = 2;
-    public static final int BOSS_ENEMY_HEALTH = 2000;
+    public static final int BOSS_ENEMY_HEALTH = 5000;
 
     //Tower
     public static final int NORMAL_TOWER_SPEED = 30;
@@ -36,11 +36,11 @@ public class Config {
     public static final int SNIPER_TOWER_COIN = 100;
 
     //BUllet
-    public static final int NORMAL_BULLET_TTL = 30;
+    public static final int NORMAL_BULLET_TTL = 45;
     public static final int NORMAL_BULLET_STRENGTH = 20;
     public static final double NORMAL_BULLET_SPEED = 2;
 
-    public static final int MACHINE_GUN_BULLET_TTL = 15;
+    public static final int MACHINE_GUN_BULLET_TTL = 30;
     public static final int MACHINE_GUN_BULLET_STRENGTH = 15;
     public static final double MACHINE_GUN_BULLET_SPEED = 3;
 
