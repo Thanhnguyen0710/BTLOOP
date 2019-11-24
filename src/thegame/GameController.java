@@ -226,9 +226,22 @@ public class GameController extends AnimationTimer {
             });
 
             sell.setOnAction(actionEvent -> {
-                startGame.setOnMouseClicked(mouseEvent -> {
-                    field.sell((int)mouseEvent.getX(),(int)mouseEvent.getY(),render);
-                    startGame.setOnMouseClicked(null);
+                Image image = new Image("/image/background/sell.png");
+                ImageView imageView = new ImageView(image);
+                pane.getChildren().add(imageView);
+                imageView.setLayoutX(1100);
+                imageView.setLayoutY(450);
+
+                startGame.setOnMouseMoved(mouseEvent -> {
+                    imageView.setLayoutX(mouseEvent.getX() - 25);
+                    imageView.setLayoutY(mouseEvent.getY() - 25);
+
+                    startGame.setOnMouseClicked(mouseEvent1 -> {
+                        field.sell((int) mouseEvent1.getX(), (int) mouseEvent1.getY(), render);
+                        pane.getChildren().remove(imageView);
+                        startGame.setOnMouseClicked(null);
+                        startGame.setOnMouseMoved(null);
+                    });
                 });
             });
 
