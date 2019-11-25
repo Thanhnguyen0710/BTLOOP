@@ -50,6 +50,7 @@ public class GameController extends AnimationTimer {
     private Button play = new Button("START");
     private Button sell = new Button("SELL");
     private Button pause = new Button("PAUSE");
+    private Button mute = new Button("Mute");
 
     private Pane pane = new Pane();
     private Pane over = new Pane();
@@ -230,7 +231,7 @@ public class GameController extends AnimationTimer {
                 ImageView imageView = new ImageView(image);
                 pane.getChildren().add(imageView);
                 imageView.setLayoutX(1100);
-                imageView.setLayoutY(450);
+                imageView.setLayoutY(420);
 
                 startGame.setOnMouseMoved(mouseEvent -> {
                     imageView.setLayoutX(mouseEvent.getX() - 25);
@@ -243,6 +244,13 @@ public class GameController extends AnimationTimer {
                         startGame.setOnMouseMoved(null);
                     });
                 });
+            });
+
+            mute.setOnAction(actionEvent -> {
+                if(musicBackgroundPlayer.getVolume() == 0)
+                    musicBackgroundPlayer.setVolume(100);
+                else
+                    musicBackgroundPlayer.setVolume(0);
             });
 
             pause.setOnAction(actionEvent -> {
@@ -272,7 +280,7 @@ public class GameController extends AnimationTimer {
         musicBackgroundPlayer.play();
 
         over.getChildren().add(gameOverView);
-        pane.getChildren().addAll(gameStartView,normal,play,sell,pause);
+        pane.getChildren().addAll(gameStartView,normal,play,sell,pause,mute);
 
         normal.setGraphic(normal_towerView);
         sniper.setGraphic(sniper_towerView);
@@ -282,7 +290,10 @@ public class GameController extends AnimationTimer {
         pause.setLayoutY(530);
 
         sell.setLayoutX(1100);
-        sell.setLayoutY(450);
+        sell.setLayoutY(420);
+
+        mute.setLayoutX(1100);
+        mute.setLayoutY(470);
 
         play.setLayoutX(1100);
         play.setLayoutY(370);

@@ -13,14 +13,6 @@ public abstract class AbstractBullet implements GameEntity {
     private int strength;
     private boolean destroy = false;
 
-    public double getSpeed() {
-        return speed;
-    }
-
-    public int getStrength() {
-        return strength;
-    }
-
     public AbstractBullet(double posX, double posY, double deltaX, double deltaY, double speed, int strength) {
         this.posX = posX;
         this.posY = posY;
@@ -49,22 +41,6 @@ public abstract class AbstractBullet implements GameEntity {
 
     public void setPosY(int posY) {
         this.posY = posY;
-    }
-
-    public double getDeltaX() {
-        return deltaX;
-    }
-
-    public void setDeltaX(int deltaX) {
-        this.deltaX = deltaX;
-    }
-
-    public double getDeltaY() {
-        return deltaY;
-    }
-
-    public void setDeltaY(int deltaY) {
-        this.deltaY = deltaY;
     }
 
     public void move() {
