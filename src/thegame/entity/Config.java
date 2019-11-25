@@ -20,7 +20,7 @@ public class Config {
     public static final int BOSS_ENEMY_SHIELD = 10;
     public static final int BOSS_ENEMY_REWARD = 100;
     public static final double BOSS_ENEMY_MOVESPEED = 2;
-    public static final int BOSS_ENEMY_HEALTH = 5000;
+    public static final int BOSS_ENEMY_HEALTH = 2000;
 
     //Tower
     public static final int NORMAL_TOWER_SPEED = 30;

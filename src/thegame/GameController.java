@@ -34,16 +34,16 @@ public class GameController extends AnimationTimer {
 
     private Image victory = new Image("/image/background/victory.png");
     private ImageView victoryView = new ImageView(victory);
-/*
-    private Media musicBackground = new Media(new File("/music/background.mp3").toURI().toString());
+
+    private Media musicBackground = new Media(new File("D:\\BTLOOP\\src\\music\\background.mp3").toURI().toString());
     private MediaPlayer musicBackgroundPlayer = new MediaPlayer(musicBackground);
 
-    private Media musicGameOver = new Media(new File("/music/gameover.mp3").toURI().toString());
+    private Media musicGameOver = new Media(new File("D:\\BTLOOP\\src\\music\\gameover.mp3").toURI().toString());
     private MediaPlayer musicGameOverPlayer = new MediaPlayer(musicGameOver);
 
-    private Media musicVictory = new Media(new File("/music/victory.mp3").toURI().toString());
+    private Media musicVictory = new Media(new File("D:\\BTLOOP\\src\\music\\victory.mp3").toURI().toString());
     private MediaPlayer musicVictoryPlayer = new MediaPlayer(musicVictory);
-*/
+
     private Button normal = new Button();
     private Button sniper = new Button();
     private Button machinegun = new Button();
@@ -72,8 +72,8 @@ public class GameController extends AnimationTimer {
     @Override
     public void handle(long l) {
         if (level == 4 && i == 30 && field.isVictory()) {
-  //          musicBackgroundPlayer.stop();
-    //        musicVictoryPlayer.play();
+            musicBackgroundPlayer.stop();
+            musicVictoryPlayer.play();
             pane.getChildren().add(victoryView);
             stop();
         }
@@ -247,11 +247,13 @@ public class GameController extends AnimationTimer {
 
             pause.setOnAction(actionEvent -> {
                 if (pause.getText().equals("PAUSE")) {
+                    musicBackgroundPlayer.pause();
                     pause.setText("PLAY");
                     stop();
                 }
                 else {
                     pause.setText("PAUSE");
+                    musicBackgroundPlayer.play();
                     super.start();
                 }
             });
@@ -259,15 +261,15 @@ public class GameController extends AnimationTimer {
             render.render();
         }
         else {
-      //      musicBackgroundPlayer.stop();
-        //    musicGameOverPlayer.play();
+            musicBackgroundPlayer.stop();
+            musicGameOverPlayer.play();
             primaryStage.setScene(overGame);
             stop();
         }
     }
 
     public void start(){
-        //musicBackgroundPlayer.play();
+        musicBackgroundPlayer.play();
 
         over.getChildren().add(gameOverView);
         pane.getChildren().addAll(gameStartView,normal,play,sell,pause);
